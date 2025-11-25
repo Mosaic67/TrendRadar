@@ -39,10 +39,12 @@ bgg
 Netflix
 美剧
 韩剧
+综艺
 英剧
 hbo
-disnety
-apple tv
+disnety+
+apple tv+
+克拉克森的农场
 @3
 
 NBA
@@ -117,12 +119,14 @@ claude
 Anthropic
 @3
 
+苹果
+apple
 iphone
 ipad
 mac
 ios
-applewatch
-appletv
+apple watch
+apple tv
 @3
 
 美国
@@ -148,5 +152,6 @@ appletv
 宇宙
 飞船
 航空
+空间站
 @1
 
