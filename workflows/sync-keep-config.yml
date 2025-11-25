@@ -41,7 +41,7 @@ jobs:
         # 尝试合并上游的 main 分支
         # --no-edit: 不打开编辑器
         # || true: 即使合并有冲突也不报错停止（我们在下一步强制覆盖）
-        git merge upstream/master --no-edit || true
+        git merge upstream/main --strategy-option=theirs --no-edit
 
     # 5. 【核心步骤】强制还原 config 目录
     - name: Restore Config Directory
