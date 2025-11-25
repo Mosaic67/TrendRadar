@@ -1,0 +1,70 @@
+name: Sync Upstream (Keep Config)
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    # 每天国际标准时间 0 点（北京时间早8点）自动运行
+    - cron: '0 0 * * *' 
+  workflow_dispatch: # 允许手动点击按钮触发
+
+jobs:
+  sync_with_upstream:
+    runs-on: ubuntu-latest
+    name: Sync main with upstream
+
+    steps:
+    # 1. 检出当前仓库代码
+    - name: Checkout target repo
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0      # 获取全部历史，用于合并
+        ref: master           # 你的主分支名称，通常是 main 或 master
+
+    # 2. 配置 Git 用户信息（用于提交代码）
+    - name: Configure Git
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+
+    # 3. 添加上游仓库并获取更新
+    - name: Pull upstream changes
+      run: |
+        # !!! 在这里替换成你要同步的上游仓库地址 !!!
+        git remote add upstream https://github.com/sansan0/TrendRadar.git
+        git fetch upstream
+
+    # 4. 合并上游代码
+    - name: Merge Upstream
+      run: |
+        # 尝试合并上游的 main 分支
+        # --no-edit: 不打开编辑器
+        # || true: 即使合并有冲突也不报错停止（我们在下一步强制覆盖）
+        git merge upstream/master --no-edit || true
+
+    # 5. 【核心步骤】强制还原 config 目录
+    - name: Restore Config Directory
+      run: |
+        echo "正在将 config 目录还原为 origin/master (你现在的版本)..."
+        
+        # 从 origin/master (GitHub上你的仓库当前状态) 强制检出 config 目录
+        # 这会覆盖掉刚才 merge 可能带来的 config 变更
+        git checkout origin/master -- config/
+        
+        # 如果 config 目录里有文件被上游删除了，这一步也会恢复它们
+
+    # 6. 提交并推送
+    - name: Push changes
+      run: |
+        # 将还原后的 config 状态加入暂存区
+        git add config/
+        
+        # 检查是否有变更需要提交
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m "Merge upstream and restore local config"
+          git push origin master
+          echo "更新成功完成。"
+        else
+          echo "没有检测到更改，无需推送。"
+        fi
