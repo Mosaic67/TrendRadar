@@ -8,6 +8,9 @@ PSN
 魔兽世界
 战网
 GTA
+电竞
+DOTA2
+星际争霸
 @5
 
 游戏机
@@ -19,7 +22,7 @@ Xbox
 
 桌游
 德式
-BGG
+bgg
 集石
 众筹
 摩点
@@ -33,11 +36,15 @@ BGG
 好莱坞
 影院
 票房
-@2
+Netflix
+美剧
+韩剧
+英剧
+hbo
+disnety
+apple tv
+@3
 
-篮球
-足球
-橄榄球
 NBA
 NFL
 FIFA
@@ -63,11 +70,7 @@ F1
 电动
 电池
 特斯拉
-@2
-
-电竞
-DOTA2
-星际争霸
+马斯克
 @2
 
 人民日报
@@ -75,86 +78,63 @@ DOTA2
 @2
 
 科技
-@3
-
+!股票
 量子计算
 比特币
 区块链
 加密货币
-@2
+@3
 
-特斯拉
-马斯克
-@1
 
 微软
 Microsoft
-@3
-
 英伟达
 NVIDIA
 黄仁勋
-@2
+硬件
+装机
+主机
+AMD
+大疆
+DJI
+自动驾驶
+宇树
+机器人
+@3
 
 ai
 !gai
 人工智能
 !组件
-@1
-
-AMD
-@2
-
-大疆
-DJI
-@2
-
-谷歌
 google
 gemini
 deepmind
-@2
-
 chatgpt
+DeepSeek
 openai
-sora
-@1
-
 claude
 Anthropic
-@1
-
-DeepSeek
-梁文锋
-@1
+@3
 
 iphone
 ipad
 mac
 ios
+applewatch
+appletv
 @3
-
-自动驾驶
-@1
-
-宇树
-机器人
-@1
-
-国产
-中国
-@1
 
 美国
 日本
 韩国
-@3
-
-芯片
-光刻机
-@1
+欧盟
+@2
 
 核能
+能源
+核聚变
+人造太阳
+托卡马克
 核电站
 水电站
 雅鲁藏布江
@@ -168,6 +148,3 @@ ios
 航空
 @1
 
-胖东来
-于东来
-@1
