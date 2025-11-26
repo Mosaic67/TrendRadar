@@ -31,6 +31,8 @@ bgg
 @3
 
 电影
+新剧
+剧集
 动漫
 小说
 好莱坞
@@ -77,6 +79,7 @@ F1
 
 人民日报
 半月谈
+十五五
 @2
 
 科技
@@ -98,8 +101,6 @@ NVIDIA
 装机
 主机
 AMD
-大疆
-DJI
 自动驾驶
 宇树
 机器人
@@ -109,6 +110,7 @@ ai
 !gai
 人工智能
 !组件
+!股价
 google
 gemini
 deepmind
@@ -120,6 +122,8 @@ Anthropic
 @3
 
 苹果
+!小苹果
+!大苹果
 apple
 iphone
 ipad
@@ -127,12 +131,15 @@ mac
 ios
 apple watch
 apple tv
+DJI
+大疆
 @3
 
 美国
 日本
 韩国
 欧盟
+战争
 @2
 
 核能
