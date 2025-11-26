@@ -2,6 +2,7 @@
 Steam
 Epic
 EA
+!react
 育碧
 PSN
 暴雪
@@ -111,6 +112,10 @@ ai
 人工智能
 !组件
 !股价
+!前端
+!后端
+!前后端
+!IDE
 google
 gemini
 deepmind
