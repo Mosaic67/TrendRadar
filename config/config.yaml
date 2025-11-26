@@ -137,6 +137,8 @@ platforms:
 # === 科技类平台 ===
   - id: "ithome"
     name: "IT之家"
+  - id: "_36kr"
+    name: "36氪"    
 #  - id: "juejin"
 #   name: "掘金"
 #  - id: "github"
@@ -151,3 +153,7 @@ platforms:
 #    name: "远景论坛"
   - id: "sspai"
     name: "少数派"
+  - id: "chongbuluo"
+    name: "虫部落"
+  - id: "smzdm"
+    name: "什么值得买"
